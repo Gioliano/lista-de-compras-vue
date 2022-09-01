@@ -1,16 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <img alt="Vue logo" src="./assets/logo.png">
+    <shopping-list msg="Vue3 App"/>
+</div>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import shoppingList from './components/shoppingList.vue'
+
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: { shoppingList },
 }
 </script>
 
